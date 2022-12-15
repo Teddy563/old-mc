@@ -1,22 +1,98 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
-html,
-body {
-  font-family: 'Roboto Mono', monospace;
-  background: #000;
-  height: 100%;
-}
-.container {
-  height: 100%;
+@import url("https://fonts.cdnfonts.com/css/minecraft-4");
+html {
   width: 100%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+  height: 100%;
 }
-.text {
+
+.social-links {
+  margin-top: 30px;
+  width: 300px;
+  float: right;
+}
+
+img {
+  width: 50px;
+}
+
+.social-links-item {
+  display: block;
+  height: 32px;
+  margin-left: 13px;
+  width: 32px;
+}
+
+a img {
+  border: none;
+  outline: none;
+}
+
+.social-links-item img {
+  display: block;
+  opacity: 0.6;
+  transition: opacity 200ms ease-out 0s;
+}
+
+.social-links-item img:hover {
+  opacity: 1;
+  transition: opacity 200ms ease-out 0s;
+}
+
+.social-links-item {
+  display: inline-block;
+  height: 32px;
+  margin-left: 13px;
+  opacity: 0.5;
+  text-indent: -99999px;
+  transition: opacity 300ms ease-out 0s;
+  vertical-align: middle;
+  width: 32px;
+}
+
+.social-links-item:hover {
+  opacity: 1;
+  transition: opacity 300ms ease-out 0s;
+}
+
+body {
+  background: #202124;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Minecraft", sans-serif;
+}
+
+.container {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.title {
   font-weight: 100;
-  font-size: 48px;
-  color: #fff;
+  color: transparent;
+  font-size: 120px;
+  background: url("https://media2.giphy.com/media/25YsNY3kRsy7EkAJas/giphy.gif?cid=790b761138b7c07f33cd85c4085034855c9b5e1c0e873a56&rid=giphy.gif&ct=g") repeat;
+  background-position: 40% 50%;
+  -webkit-background-clip: text;
+  position: relative;
+  text-align: center;
+  line-height: 150px;
+  letter-spacing: 0px;
+  text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.3);
 }
-.dud {
-  color: #fff;
+
+.subtitle {
+  color: transparent;
+  background: url("https://media2.giphy.com/media/25YsNY3kRsy7EkAJas/giphy.gif?cid=790b761138b7c07f33cd85c4085034855c9b5e1c0e873a56&rid=giphy.gif&ct=g") repeat;
+  background-position: 35% 65%;
+  -webkit-background-clip: text;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 0px;
+  font-weight: 100;
+  text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.3);
 }
